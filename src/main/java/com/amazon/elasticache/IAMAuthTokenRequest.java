@@ -45,6 +45,7 @@ public class IAMAuthTokenRequest {
             .uri(getRequestUri())
             .appendRawQueryParameter(PARAM_ACTION, ACTION_NAME)
             .appendRawQueryParameter(PARAM_USER, userId)
+            .appendRawQueryParameter("ResourceType", "ServerlessCache")
             .build();
     }
 
